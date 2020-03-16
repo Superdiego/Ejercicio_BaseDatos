@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS clientes_DB;
+USE clientes_DB;
+CREATE TABLE IF NOT EXISTS clientes (
+dni VARCHAR(9) PRIMARY KEY,
+Nombre VARCHAR(30),
+Direccion VARCHAR(50),
+Localidad VARCHAR(30),
+Provincia VARCHAR(30),
+Telefono VARCHAR(9),
+email VARCHAR(30)
+);
+INSERT INTO datos(dni, Nombre, Direccion, Localidad, Provincia, Telefono, email)
+VALUES 
+("22333444b", "Juan Jose Marinez Lopez", "C/ el peral 24h", "Aspe", "Alicante", "545678765", "juanjo@hotmail.com"),
+("11222333e", "Maria Gomez Giner", "Avda. Reyes Catolicos, 23 1º D", "Alicante", "Alicante", "677765567", "maria@gmail.com"),
+("55555555r", "Juanito Valdes Garcia", "Cantal de Eraes, s/n", "Aspe", "Alicante", "666555444", "jafl@laskdjf.com");
