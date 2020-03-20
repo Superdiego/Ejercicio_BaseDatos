@@ -10,6 +10,8 @@ include("funciones.php");
 <?php 
 pintar_tabla();
 ?>
+<br><br>
+<button><a href="clientenuevo.php">Nuevo cliente</a></button>
 </body></html>
 
-<?php
+

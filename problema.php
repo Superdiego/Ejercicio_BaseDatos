@@ -1,16 +1,4 @@
 <?php
-function conectar(){
-    $con = mysqli_connect("localhost", "jefe", "jefe","clientes_db");
-    if(mysqli_connect_errno()){
-        echo "Error en la conexion";
-    }else{
-    return $con;
-    }
-}
-function desconectar($con){
-    mysqli_close($con);
-}
-
 function listar_clientes(){
     $con = conectar();
     $cod = "SELECT * FROM clientes";
@@ -24,19 +12,4 @@ function listar_clientes(){
     }
     desconectar($con);
 }
-
-
-
-
-function pintar_tabla(){
-   echo "<table><thead><tr><th>DNI</th><th>Nombre</th><th>Direccion</th>
-        <th>Localidad</th><th>Provincia</th><th>Telefono</th><th>email</th><th>Editar</th>
-        <th>Borrar</th></tr></thead>";
-    listar_clientes();
-    echo "</table>";
-    
-}
-
-
-
 ?>
